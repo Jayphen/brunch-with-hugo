@@ -16,3 +16,6 @@ I included the entirity of [shoelace.css](https://shoelace.style/docs/installing
 
 #### P.S.
 You can use this with Hugo's nifty `--skeleton` flag like `brunch new --skeleton https://github.com/Jayphen/brunch-with-hugo.git <projectname>`. That will create a project, run an npm install for you, and BAM you have a shitty boilerplate thanks to me!
+
+##### P.P.S
+Go check out the [Hugo docs](https://gohugo.io/documentation/) and make something better than this because you're smarter than me.
