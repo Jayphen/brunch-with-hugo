@@ -8,6 +8,7 @@ module.exports = {
     plugins: {
       postcss: {
         processors: [
+          require('postcss-import')(),
           require('postcss-cssnext')()
         ]
       },

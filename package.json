@@ -9,7 +9,9 @@
     "browser-sync-brunch": "0.0.9",
     "brunch": "^2.10.10",
     "postcss-brunch": "^2.1.0",
-    "postcss-cssnext": "^3.0.2"
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
+    "shoelace-css": "^1.0.0-beta22"
   },
   "devDependencies": {
     "hugo-bin": "^0.13.0"

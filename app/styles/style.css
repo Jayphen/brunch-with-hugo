@@ -1,9 +1,12 @@
+@import "shoelace-css/source/css/shoelace.css";
+
 body {
   background: white;
   font-family: sans-serif;
   display: flex;
   align-items: center;
   font-weight: bold;
+  padding: 2rem;
   & .container {
     max-width: 50%;
     margin: 0 auto;
