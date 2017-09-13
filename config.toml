@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "A Brunch-compiled Hugo site"
+disableLiveReload = true

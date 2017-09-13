@@ -1,0 +1,3 @@
+= content 'main'
+  h2 {{.Title}}
+  main {{.Content}}

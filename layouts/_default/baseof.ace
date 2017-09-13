@@ -1,0 +1,13 @@
+= doctype html
+html lang=en
+  head
+    meta charset=utf-8
+    title {{.Site.Title}}
+    link href="/css/main.css" rel="stylesheet"
+  body
+    .container
+      h1 This is a base template
+      = yield 'main'
+    script src="/app.js"
+    = javascript
+      require('app').init();
