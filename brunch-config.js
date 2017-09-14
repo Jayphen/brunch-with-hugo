@@ -5,6 +5,12 @@ module.exports = {
         javascripts: { joinTo: 'app.js' }
     },
 
+    modules: {
+        autoRequire: {
+            'app.js': ['initialize']
+        }
+    },
+
     plugins: {
       postcss: {
         processors: [

@@ -1,10 +1,15 @@
 'use strict';
 
-const alerty = require('js/alerty');
+const Alerty = require('js/alerty');
 
 const App = {
+    log(...args) {
+        for (let item of args) {
+            console.log(item);
+        }
+    },
     init() {
-        console.log(alerty.text);
+        this.log(`Wow, ${Alerty.text}`, 'amazing');
     }
 };
 

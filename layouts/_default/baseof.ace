@@ -9,5 +9,3 @@ html lang=en
       h1 This is a base template
       = yield 'main'
     script src="/app.js"
-    = javascript
-      require('app').init();
