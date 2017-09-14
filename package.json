@@ -6,8 +6,8 @@
   "dependencies": {
     "autoprefixer": "^7.1.4",
     "babel-brunch": "^6.1.1",
-    "browser-sync-brunch": "0.0.9",
     "brunch": "^2.10.10",
+    "concurrently": "^3.5.0",
     "postcss-brunch": "^2.1.0",
     "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
@@ -18,9 +18,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "brunch watch --server",
-    "build": "brunch build --production",
-    "hugo": "hugo server -D -d 'public'"
+    "del": "rm -rf public/* static/*",
+    "fresh": "hugo -DF --disableKinds sitemap,RSS",
+    "start": "concurrently -n \"Brunch,Hugo\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run del && brunch watch\" \"npm run hugo\"",
+    "build": "npm run del && brunch build --production && hugo",
+    "hugo": "hugo server -DF --disableKinds sitemap,RSS"
   },
   "author": "Jayphen",
   "license": "ISC"

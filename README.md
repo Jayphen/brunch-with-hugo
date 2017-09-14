@@ -1,15 +1,11 @@
 # brunch-with-hugo
-A boilerplate wrapping Hugo using Brunch and Browsersync
+A boilerplate wrapping Hugo using Brunch
 
 ## OK I cloned the repo, now what?
 First run `npm install` pls.
 
 ## How do I run a local server?
-At the moment, you must run two tasks.
-
-`npm hugo` will run a hugo server, which does the hugo magic and compiles to `/public`.
-
-`npm start` will commence the Brunching, which runs your JS through Babel and also compiles your postcss. There's Browsersync in there too, which proxies the hugo server at `localhost:3000`. I added Browsersync coz I like it better than LiveReload ok?
+`npm start` will start the server for both Brunch and Hugo. Brunch runs your JS through Babel and also compiles your postcss. 
 
 ## One more thing
 I included the entirity of [shoelace.css](https://shoelace.style/docs/installing.html) because it was easier, but I don't recommend using it all. Pick out the bits you want from https://github.com/claviska/shoelace-css/blob/master/source/css/shoelace.css and import those. I usually just use the variables, content, forms, tables, and utilities.

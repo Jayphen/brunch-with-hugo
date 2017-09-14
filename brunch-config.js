@@ -1,5 +1,9 @@
 module.exports = {
 
+    paths: {
+        public: 'static'
+    },
+
     files: {
         stylesheets: { joinTo: 'css/main.css' },
         javascripts: { joinTo: 'app.js' }
@@ -17,10 +21,7 @@ module.exports = {
           require('postcss-import')(),
           require('postcss-cssnext')()
         ]
-      },
-      browserSync: {
-          files: 'public/**/*',
-          proxy: 'localhost:1313'
       }
     }
+
 };
