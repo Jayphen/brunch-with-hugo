@@ -6,6 +6,6 @@ html lang=en
     link href="/css/main.css" rel="stylesheet"
   body
     .container
-      h1 This is a base template
+      h1 This header is coming from the root base template
       = yield 'main'
     script src="/app.js"

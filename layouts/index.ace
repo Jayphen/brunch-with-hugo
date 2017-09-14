@@ -1,2 +1,18 @@
 = content 'main'
-  div This is the inner layout
+  {{ $posts := (where .Data.Pages "Section" "==" "post") }}
+
+  div This header is coming from the inner layout
+  {{ with .Content }}
+    div {{.}}
+  {{ end }}
+
+  hr
+
+  h4 Also here is everything in the post Section:
+  {{ with $posts }}
+    {{ range . }}
+      a href={{.Permalink}}
+        h3 {{.Title}}
+      {{.Content}}
+    {{ end }}
+  {{ end }}
